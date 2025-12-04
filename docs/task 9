@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+void removeSpaces(char* str) {
+    char* dest = str;
+    char* src = str;
+    
+    while (*src != '\0') {
+        if (*src != ' ') {
+            *dest = *src;
+            dest++;
+        }
+        src++;
+    }
+    *dest = '\0';
+}
+
+int main9() {
+    char text[] = "H e l l o   W o r l d !";
+    removeSpaces(text);
+    cout << "Без пробелов: " << text << endl;
+    return 0;
+}
