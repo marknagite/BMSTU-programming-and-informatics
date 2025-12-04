@@ -1,0 +1,16 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <cmath>
+#include <cstdlib>
+
+int main() {
+    char text[] = "programming";
+    char target = 'm';
+    int count = 0;
+    const char* ptr = text;
+    
+    while (*ptr != '\0') {
+        if (*ptr == target) count++;
+        ptr++;
+    }
