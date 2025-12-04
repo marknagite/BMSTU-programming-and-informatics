@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <cmath>
+#include <cstdlib>
+using namespace std;
+void myStrCopy(char* dest, const char* src) {
+    while (*src != '\0') {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+    *dest = '\0';
+}
+
+int main2() {
+    char source[] = "Source string";
+    char destination[50];
+    myStrCopy(destination, source);
+    cout << "Скопированная строка: " << destination << endl;
+    return 0;
+}
